@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Net.Http.Headers;
 
 class Atividade1
 {
@@ -88,6 +89,23 @@ class Atividade1
         }else
         {
             Console.WriteLine($"{numero} é impar");
+        }
+
+        int n1, n2, n3;
+        Console.WriteLine("Digite as tres notas");
+        n1 = int.Parse(Console.ReadLine());
+        n2 = int.Parse(Console.ReadLine());
+        n3 = int.Parse(Console.ReadLine());
+
+         double media = (n1 + n2 + n3) / 3;
+
+        if(media >= 7)
+        {
+            Console.WriteLine("Aprovado");
+        }
+        else
+        {
+            Console.WriteLine("Reprovado");
         }
 
     }
