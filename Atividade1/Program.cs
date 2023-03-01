@@ -78,7 +78,7 @@ class Atividade1
         Console.WriteLine(n2);
         */
 
-        /*aula12 e aula 13*/
+        /*aula12 e aula 13
 
         Console.WriteLine("Digite o numero:");
         int numero = int.Parse(Console.ReadLine());
@@ -101,11 +101,83 @@ class Atividade1
 
         if(media >= 7)
         {
-            Console.WriteLine("Aprovado");
+            if(media >= 9)
+            {
+                Console.WriteLine("Aprovado com louvor");
+            }
+            else
+            {
+                Console.WriteLine("Aprovado");
+            }
         }
         else
         {
-            Console.WriteLine("Reprovado");
+            if(media >= 4)
+            {
+                Console.WriteLine("Recuperação");
+            }
+            else
+            {
+                Console.WriteLine("Reprovado");
+            }
+            
+        }
+        */
+
+        /*aula 15*/
+        var veiculo = "";
+        char escolha;
+        int tempo;
+        
+        inicio:
+
+        Console.Clear();
+
+        Console.WriteLine("Sobral a fortaleza");
+        Console.WriteLine("Escolha o transporte:[a]Aviao | [c]Carro | o[Onibus]");
+        escolha = char.Parse(Console.ReadLine());
+
+        switch (escolha)
+        {
+            case 'a':
+            case 'A':
+                tempo = 50;
+                veiculo = "Aviao";
+                break;
+            case 'c':
+            case 'C':
+                tempo = 480;
+                veiculo = "Carro";
+                break;
+            case 'o':
+            case 'O':
+                tempo = 660;
+                veiculo = "Onibus";
+                break;
+            default:
+                tempo = -1;
+                break;
+        }
+        if(tempo < 0)
+        {
+            Console.WriteLine("Transporte indisponivel!");
+        }
+        else
+        {
+            Console.WriteLine($"Sua viagem sera de  {veiculo} e o tempo será de {tempo} minutos");
+        }
+
+        Console.Write("\nCalcular outro transporte?[s/n]: ");
+        escolha = char.Parse(Console.ReadLine());
+
+        if (escolha == 's' || escolha == 'S')
+        {
+            goto inicio;
+        }
+        else
+        {
+            Console.Clear();
+            Console.WriteLine("Fim do Programa!");
         }
 
     }
