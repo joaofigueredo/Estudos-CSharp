@@ -223,7 +223,7 @@ class Atividade1
             Console.Write("\n");
         }
         */
-        /*LOOPS*/
+        /*LOOPS
 
         for(int i = 0; i <= 10; i++)
         {
@@ -236,6 +236,27 @@ class Atividade1
                 Console.WriteLine($"{i} é impar");
             }
         }
+        
+        int i = 0;
+        int numero = 10;
+        while( numero > i )
+        { 
+            Console.WriteLine( i ); 
+            i++;
+        } 
+        */
+        string senha = "123";
+        string senhaUser;
+        int tentativas = 0;
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("Digite sua senha");
+            senhaUser = Console.ReadLine();
+            tentativas++;
+        } while (senhaUser != "123");
+
+        Console.WriteLine($"Senha correta, tentativas {tentativas}");
     }
 }
 
