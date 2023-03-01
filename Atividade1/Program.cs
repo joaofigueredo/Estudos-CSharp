@@ -124,7 +124,7 @@ class Atividade1
         }
         */
 
-        /*aula 15 e 16 SWITCH e GOTO*/
+        /*aula 15 e 16 SWITCH e GOTO
         var veiculo = "";
         char escolha;
         int tempo;
@@ -179,7 +179,63 @@ class Atividade1
             Console.Clear();
             Console.WriteLine("Fim do Programa!");
         }
+        */
 
+        /*aula 17 ARRAY
+
+        int n1, n2, n3, n4, n5;
+        int[] n = new int[5]; //posicao 0-4
+        //int[] num = new int[3] { 55, 77, 99}; 
+        int[] num = { 100, 200, 300}; //array tera o numero de elementos que foi
+                                      //inserido na declaracao
+        string[] veiculos = new string[3];
+
+        veiculos[0] = "Carro";
+        veiculos[1] = "Aviao";
+        veiculos[2] = "Navio";
+
+        n[0] = 11;
+        n[1] = 22;
+        n[2] = 33;
+        n[3] = 44;
+        n[4] = 55;
+
+        Console.WriteLine(num[2]);
+        */
+
+        /*aula 18 MATRIZES
+        int t = 10;
+        int[,] n = new int[5, 5];
+        for(int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                n[i, j] = t;
+                t+=5;
+            } 
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                Console.Write($"{n[i,j]} ");
+            }
+            Console.Write("\n");
+        }
+        */
+        /*LOOPS*/
+
+        for(int i = 0; i <= 10; i++)
+        {
+            if(i % 2 == 0)
+            {
+                Console.WriteLine($"{i} é par");
+            }
+            else
+            {
+                Console.WriteLine($"{i} é impar");
+            }
+        }
     }
 }
 
