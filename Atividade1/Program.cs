@@ -124,7 +124,7 @@ class Atividade1
         }
         */
 
-        /*aula 15*/
+        /*aula 15 e 16 SWITCH e GOTO*/
         var veiculo = "";
         char escolha;
         int tempo;
